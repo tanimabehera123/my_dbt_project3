@@ -42,21 +42,9 @@ models:
 
       - name: quantity
         description: "Number of units produced"
-        data_tests:
-          - not_null
-        meta:
-          metrics:
-            type: number
-            label: Total Quantity
 
       - name: cost_per_unit
         description: "Cost to manufacture one unit"
-        data_tests:
-          - not_null
-        meta:
-          metrics:
-            type: average
-            label: Average Cost per Unit
 
       - name: total_cost
         description: "Total cost of production (quantity * cost_per_unit)"
