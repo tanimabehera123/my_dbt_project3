@@ -20,7 +20,7 @@ models:
           - unique
           - not_null
         
-  - name: manufacturing
+  - name: manufacturing_data
     description: "Table containing manufacturing product details"
     columns:
       - name: product_id
