@@ -51,5 +51,9 @@ models:
           - not_null
 
       - name: total_cost
+        meta:
+            metrics:
+              total_cost:
+                type: sum
         description: "Total cost of production (quantity * cost_per_unit)"
 
