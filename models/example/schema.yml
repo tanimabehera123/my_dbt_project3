@@ -46,7 +46,7 @@ models:
           - not_null
         meta:
           metrics:
-            type: sum
+            type: number
             label: Total Quantity
 
       - name: cost_per_unit
