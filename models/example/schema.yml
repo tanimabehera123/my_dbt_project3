@@ -25,13 +25,13 @@ models:
     columns:
       - name: product_id
         description: "Unique identifier for each product"
-        data_tests:
+        tests:
           - unique
           - not_null
 
       - name: product_name
         description: "Name of the manufactured product"
-        data_tests:
+        tests:
           - not_null
 
       - name: category
@@ -42,28 +42,34 @@ models:
 
       - name: quantity
         description: "Number of units produced"
-        data_tests:
+        tests:
           - not_null
         meta:
+          dimension:
+            type: number
           metrics:
-            - name: total_quantity
-              label: Total Quantity
+            sum:
               type: sum
+              description: "Total quantity of items produced"
 
       - name: cost_per_unit
         description: "Cost to manufacture one unit"
-        data_tests:
+        tests:
           - not_null
         meta:
+          dimension:
+            type: number
           metrics:
-            - name: average_cost_per_unit
-              label: Average Cost per Unit
+            average:
               type: average
+              description: "Average cost per unit"
 
       - name: total_cost
         description: "Total cost of production (quantity * cost_per_unit)"
         meta:
+          dimension:
+            type: number
           metrics:
-            - name: total_cost
-              label: Total Cost
+            sum:
               type: sum
+              description: "Total production cost"
