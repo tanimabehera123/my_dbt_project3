@@ -74,7 +74,7 @@ models:
               type: sum
               description: "Total production cost"
 
-  - name: store_sales_data
+  - name: store_sales
     description: "Store-level sales, traffic, and performance data across regions and periods."
     columns:
       - name: comp_status_desc
