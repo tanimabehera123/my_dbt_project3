@@ -19,3 +19,37 @@ models:
         data_tests:
           - unique
           - not_null
+        
+  - name: manufacturing_data
+    description: "Table containing manufacturing product details"
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: product_name
+        description: "Name of the manufactured product"
+        data_tests:
+          - not_null
+
+      - name: category
+        description: "Category or type of the product"
+
+      - name: production_date
+        description: "Date when the product was manufactured"
+
+      - name: quantity
+        description: "Number of units produced"
+        data_tests:
+          - not_null
+
+      - name: cost_per_unit
+        description: "Cost to manufacture one unit"
+        data_tests:
+          - not_null
+
+      - name: total_cost
+        description: "Total cost of production (quantity * cost_per_unit)"
+
