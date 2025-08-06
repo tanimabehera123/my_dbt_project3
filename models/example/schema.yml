@@ -73,3 +73,360 @@ models:
             sum:
               type: sum
               description: "Total production cost"
+
+  - name: store_sales_data
+    description: "Store-level sales, traffic, and performance data across regions and periods."
+    columns:
+      - name: comp_status_desc
+        description: "Comparison status description"
+
+      - name: comp_status_id
+        description: "Comparison status ID"
+
+      - name: conv_currency_desc
+        description: "Conversion currency description"
+
+      - name: conv_currency_id
+        description: "Conversion currency ID"
+
+      - name: date
+        description: "Date of the record"
+
+      - name: fiscal_period_desc
+        description: "Fiscal period description"
+
+      - name: fiscal_period_id
+        description: "Fiscal period ID"
+
+      - name: fiscal_week_desc
+        description: "Fiscal week description"
+
+      - name: fiscal_week_id
+        description: "Fiscal week ID"
+
+      - name: fiscal_week_mmm_w
+        description: "Fiscal week in MMM W# format"
+
+      - name: fiscal_year_desc
+        description: "Fiscal year description"
+
+      - name: fiscal_year_id
+        description: "Fiscal year ID"
+
+      - name: gender
+        description: "Customer gender"
+
+      - name: region_desc
+        description: "Region description"
+
+      - name: region_id
+        description: "Region ID"
+
+      - name: retail_brand_site_desc
+        description: "Retail brand (site) description"
+
+      - name: retail_brand_site_id
+        description: "Retail brand (site) ID"
+
+      - name: retail_district_desc
+        description: "Retail district description"
+
+      - name: retail_district_id
+        description: "Retail district ID"
+
+      - name: row_count_lh1090_store_reporting
+        description: "Row count from LH1090 store reporting export"
+
+      - name: sales_org_desc
+        description: "Sales organization description"
+
+      - name: sales_org_id
+        description: "Sales organization ID"
+
+      - name: site_id
+        description: "Site ID"
+
+      - name: site_category_id
+        description: "Site category ID"
+
+      - name: site_format_desc
+        description: "Site format description"
+
+      - name: site_key_id
+        description: "Site key ID"
+
+      - name: site_name_id
+        description: "Site name ID"
+
+      - name: site_number_id
+        description: "Site number ID"
+
+      - name: site_status_desc
+        description: "Site status description"
+
+      - name: site_status_id
+        description: "Site status ID"
+
+      - name: site_type_desc
+        description: "Site type description"
+
+      - name: site_type_id
+        description: "Site type ID"
+
+      - name: zone_id
+        description: "Zone ID"
+
+      - name: aur
+        description: "Average Unit Retail"
+        meta:
+          dimension:
+            type: number
+          metrics:
+            average:
+              type: average
+              description: "Average Unit Retail"
+
+      - name: aur_lly
+        description: "AUR Last Last Year"
+
+      - name: aur_ly
+        description: "AUR Last Year"
+
+      - name: aur_ty_lly_percent
+        description: "AUR TY vs LLY %"
+
+      - name: aur_ty_lly_var
+        description: "AUR TY vs LLY Var"
+
+      - name: aur_ty_ly_percent
+        description: "AUR TY vs LY %"
+
+      - name: aur_ty_ly_var
+        description: "AUR TY vs LY Var"
+
+      - name: avt
+        description: "Average Transaction Value"
+        meta:
+          dimension:
+            type: number
+          metrics:
+            average:
+              type: average
+              description: "Average Transaction Value"
+
+      - name: avt_lly
+        description: "AVT Last Last Year"
+
+      - name: avt_ly
+        description: "AVT Last Year"
+
+      - name: avt_ty_lly_percent
+        description: "AVT TY vs LLY %"
+
+      - name: avt_ty_lly_var
+        description: "AVT TY vs LLY Var"
+
+      - name: avt_ty_ly_percent
+        description: "AVT TY vs LY %"
+
+      - name: avt_ty_ly_var
+        description: "AVT TY vs LY Var"
+
+      - name: count_site_status_id
+        description: "Count of Site Status ID"
+
+      - name: eoh_str_qty
+        description: "End of hand stock quantity (string)"
+
+      - name: gm_merch
+        description: "Gross Margin (Merchandise)"
+        meta:
+          dimension:
+            type: number
+          metrics:
+            sum:
+              type: sum
+              description: "Gross Margin (Merch)"
+
+      - name: gm_percent_merch
+        description: "Gross Margin % (Merchandise)"
+
+      - name: gm_percent_lly_merch
+        description: "GM % LLY (Merchandise)"
+
+      - name: gm_percent_ly_merch
+        description: "GM % LY (Merchandise)"
+
+      - name: gm_bps_ty_lly_merch
+        description: "GM Basis Points TY vs LLY"
+
+      - name: gm_bps_ty_ly_merch
+        description: "GM Basis Points TY vs LY"
+
+      - name: gm_lly_merch
+        description: "GM LLY (Merchandise)"
+
+      - name: gm_ly_merch
+        description: "GM LY (Merchandise)"
+
+      - name: gm_ty_lly_percent_merch
+        description: "GM TY vs LLY % (Merchandise)"
+
+      - name: gm_ty_lly_var_merch
+        description: "GM TY vs LLY Var (Merchandise)"
+
+      - name: gm_ty_ly_percent_merch
+        description: "GM TY vs LY % (Merchandise)"
+
+      - name: gm_ty_ly_var_merch
+        description: "GM TY vs LY Var (Merchandise)"
+
+      - name: net_sls_amt
+        description: "Net Sales Amount"
+        meta:
+          dimension:
+            type: number
+          metrics:
+            sum:
+              type: sum
+              description: "Total Net Sales Amount"
+
+      - name: net_sls_amt_lly
+        description: "Net Sales Amount LLY"
+
+      - name: net_sls_amt_ly
+        description: "Net Sales Amount LY"
+
+      - name: net_sls_amt_ty_lly_percent
+        description: "Net Sales Amount TY vs LLY %"
+
+      - name: net_sls_amt_ty_lly_var
+        description: "Net Sales Amount TY vs LLY Var"
+
+      - name: net_sls_amt_ty_ly_percent
+        description: "Net Sales Amount TY vs LY %"
+
+      - name: net_sls_amt_ty_ly_var
+        description: "Net Sales Amount TY vs LY Var"
+
+      - name: net_sls_qty
+        description: "Net Sales Quantity"
+        meta:
+          dimension:
+            type: number
+          metrics:
+            sum:
+              type: sum
+              description: "Total Net Sales Quantity"
+
+      - name: net_sls_qty_lly
+        description: "Net Sales Quantity LLY"
+
+      - name: net_sls_qty_ly
+        description: "Net Sales Quantity LY"
+
+      - name: net_sls_qty_ty_lly_percent
+        description: "Net Sales Qty TY vs LLY %"
+
+      - name: net_sls_qty_ty_lly_var
+        description: "Net Sales Qty TY vs LLY Var"
+
+      - name: net_sls_qty_ty_ly_percent
+        description: "Net Sales Qty TY vs LY %"
+
+      - name: row_count_store_sales_gender
+        description: "Row count from store_sales-gender.csv"
+
+      - name: rtn_amt
+        description: "Return Amount"
+
+      - name: rtn_amt_percent
+        description: "Return Amount %"
+
+      - name: rtn_amt_lly
+        description: "Return Amount LLY"
+
+      - name: rtn_amt_ly
+        description: "Return Amount LY"
+
+      - name: rtn_amt_ty_ly_percent
+        description: "Return Amount TY vs LY %"
+
+      - name: rtn_bps_ty_lly
+        description: "Return Basis Points TY vs LLY"
+
+      - name: rtn_bps_ty_ly
+        description: "Return Basis Points TY vs LY"
+
+      - name: sls_trfc_amt_ty_lly_percent
+        description: "Sales Traffic Amount TY vs LLY %"
+
+      - name: sls_trfc_amt_ty_ly_percent
+        description: "Sales Traffic Amount TY vs LY %"
+
+      - name: sls_trfc_gm_ty_lly_percent_merch
+        description: "Sales Traffic GM TY vs LLY % (Merch)"
+
+      - name: sls_trfc_gm_ty_ly_percent_merch
+        description: "Sales Traffic GM TY vs LY % (Merch)"
+
+      - name: str_pln_sls_amt
+        description: "Store Planned Sales Amount"
+
+      - name: traffic_in
+        description: "Traffic In"
+
+      - name: traffic_in_lly
+        description: "Traffic In LLY"
+
+      - name: traffic_in_ly
+        description: "Traffic In LY"
+
+      - name: traffic_in_ttl_conv_percent
+        description: "Total Conversion %"
+
+      - name: traffic_in_ttl_conv_percent_lly
+        description: "Total Conversion % LLY"
+
+      - name: traffic_in_ttl_conv_percent_ly
+        description: "Total Conversion % LY"
+
+      - name: traffic_in_ttl_conv_percent_ty_lly_var
+        description: "Total Conv % TY vs LLY Var"
+
+      - name: traffic_in_ttl_conv_percent_ty_ly_var
+        description: "Total Conv % TY vs LY Var"
+
+      - name: traffic_in_ty_lly_percent
+        description: "Traffic In TY vs LLY %"
+
+      - name: traffic_in_ty_lly_var
+        description: "Traffic In TY vs LLY Var"
+
+      - name: traffic_in_ty_ly_percent
+        description: "Traffic In TY vs LY %"
+
+      - name: traffic_in_ty_ly_var
+        description: "Traffic In TY vs LY Var"
+
+      - name: upt
+        description: "Units Per Transaction"
+
+      - name: upt_lly
+        description: "UPT Last Last Year"
+
+      - name: upt_ly
+        description: "UPT Last Year"
+
+      - name: upt_ty_lly_percent
+        description: "UPT TY vs LLY %"
+
+      - name: upt_ty_lly_var
+        description: "UPT TY vs LLY Var"
+
+      - name: upt_ty_ly_percent
+        description: "UPT TY vs LY %"
+
+      - name: upt_ty_ly_var
+        description: "UPT TY vs LY Var"
+
