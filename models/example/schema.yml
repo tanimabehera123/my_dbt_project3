@@ -20,7 +20,7 @@ models:
           - unique
           - not_null
         
-  - name: manufacturing_data
+  - name: manufacturing
     description: "Table containing manufacturing product details"
     columns:
       - name: product_id
@@ -44,16 +44,23 @@ models:
         description: "Number of units produced"
         data_tests:
           - not_null
+        meta:
+          metrics:
+            type: sum
+            label: Total Quantity
 
       - name: cost_per_unit
         description: "Cost to manufacture one unit"
         data_tests:
           - not_null
+        meta:
+          metrics:
+            type: average
+            label: Average Cost per Unit
 
       - name: total_cost
-        meta:
-            metrics:
-              total_cost:
-                type: sum
         description: "Total cost of production (quantity * cost_per_unit)"
-
+        meta:
+          metrics:
+            type: sum
+            label: Total Cost
