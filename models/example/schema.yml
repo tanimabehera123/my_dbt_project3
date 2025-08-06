@@ -182,7 +182,7 @@ models:
           dimension:
             type: number
           metrics:
-            average:
+            Average Unit Retail:
               type: average
               description: "Average Unit Retail"
 
@@ -244,7 +244,7 @@ models:
           dimension:
             type: number
           metrics:
-            Gross Margi:
+            Gross Margin:
               type: sum
               description: "Gross Margin (Merch)"
 
